@@ -1,4 +1,4 @@
-package com.soft.pes.server;
+package com.pes.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

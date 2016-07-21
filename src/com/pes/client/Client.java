@@ -1,4 +1,4 @@
-package com.soft.pes.client;
+package com.pes.client;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;

@@ -1,4 +1,4 @@
-package com.soft.pes.server;
+package com.pes.server;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

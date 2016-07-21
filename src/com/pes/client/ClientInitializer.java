@@ -1,4 +1,4 @@
-package com.soft.pes.server;
+package com.pes.client;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
@@ -12,7 +12,7 @@ import io.netty.handler.codec.string.StringEncoder;
  * @author Maixianglei
  * @time 2016-7-21
  */
-public class ServerInitializer extends ChannelInitializer<SocketChannel> {
+public class ClientInitializer extends ChannelInitializer<SocketChannel> {
 
 	protected void initChannel(SocketChannel ch) throws Exception {
 		ChannelPipeline pipeline = ch.pipeline();
@@ -23,9 +23,9 @@ public class ServerInitializer extends ChannelInitializer<SocketChannel> {
 		// 字符串解码器和编码器
 		pipeline.addLast("decoder", new StringDecoder());
 		pipeline.addLast("encoder", new StringEncoder());
-		
+
 		// 自己的逻辑handler
-		pipeline.addLast("handler", new ServerHandler());
+		pipeline.addLast("handler", new ClientHandler());
 	}
 
 }
